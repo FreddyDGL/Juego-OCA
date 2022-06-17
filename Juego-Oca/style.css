@@ -28,8 +28,8 @@ h1{
     margin-top: -85%;
 }
 .tablero:hover{
-    -webkit-transition: 0.55s;
-    transition: 0.55s;
+    -webkit-transition: 2.00s;
+    transition: 2.00s;
 }
 
 #inicio{
@@ -299,8 +299,8 @@ h1{
 }
 
 #casilla1,#casilla2,#casilla3,#casilla4,#casilla5,#casilla6,#casilla7,#casilla8,#casilla9,#casilla10,#casilla11,#casilla12,#casilla13,#casilla14,#casilla16,#casilla17,#casilla18,#casilla19,#casilla20,#casilla21,#casilla22,#casilla23,#casilla24,#casilla25:hover{
-    -webkit-transition: 0.55s;
-    transition: 0.55s;
+    -webkit-transition: 0.70s;
+    transition: 0.70s;
 }
 #btn-Azul{
     background-color: #5198FF !important;
@@ -350,8 +350,8 @@ h1{
 
 #btn-Azul {
   color: var(--color);
-  -webkit-transition: 0.55s;
-  transition: 0.55s;
+  -webkit-transition: 2.00s;
+  transition: 2.00s;
 }
 #btn-Azul:hover, #btn-Azul:focus {
   border-color: var(--hover);
@@ -365,8 +365,8 @@ h1{
 
 #btn-Roja {
     color: var(--color);
-    -webkit-transition: 0.55s;
-    transition: 0.55s;
+    -webkit-transition: 2.00s;
+    transition: 2.00s;
 }
 
 #btn-Roja:hover, #btn-Roja:focus {
@@ -376,8 +376,8 @@ h1{
 
 #btn-Tirar {
     color: var(--color);
-    -webkit-transition: 0.55s;
-    transition: 0.55s;
+    -webkit-transition: 2.00s;
+    transition: 2.00s;
 }
 
 #btn-Tirar:hover, #btn-Tirar:focus {
@@ -407,4 +407,30 @@ h1{
     float: left;
     margin-left: -360px;
     margin-top: -1650px;
+}
+
+#img4{
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-left: 20px;
+    margin-top: -460px;
+}
+
+#img5{
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-left: 100px;
+    margin-top: -460px;
+}
+#img3{
+    color: var(--color);
+    -webkit-transition: 2.00s;
+    transition: 2.00s;
+}
+
+#img3:hover, #img3:focus {
+    border-color: var(--hover);
+    color: #fff;
 }
