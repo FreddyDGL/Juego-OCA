@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juego Oca</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="Imagenes/.png" href="Imagenes/favicon.png"/>
 </head>
 
 <body>
@@ -116,10 +117,12 @@
     <script>
 
         //arreglo de 26 elementos que representa el tablero a partir del primer elemento
-        var prueba = [[25,15],[225,15],[325,15],[435,15],[545,15],[655,15],[765,15],[870,15],[870,125],[870,235],[870,345],[870,475],[760,475],[650,475]
+        var fichaAzul = [[25,15],[225,15],[325,15],[435,15],[545,15],[655,15],[765,15],[870,15],[870,125],[870,235],[870,345],[870,475],[760,475],[650,475]
         ,[533,475],[430,475],[320,475],[210,475],[25,474],[25,345],[25,190],[125,190],[235,190],[345,190],[500,190]];
+
         var prueba2 = [[125,15],[270,15],[379,15],[485,15],[595,15],[705,15],[815,15],[917,15],[917,125],[917,235],
         [917,345],[870,475],[805,475],[695,475],[588,475],[478,475],[368,475],[258,475],[73,475],[60,399],[60,280],[175,190],[289,190],[395,190],[545,190]];
+
         var posicionJugador1 = 0;
         var posicionJugador2 = 0;
         var fichaSeleccionada;
@@ -132,14 +135,6 @@
         var posY = 0;
         
 
-        //mover sobre el tablero al ganzo
-        function moverFichaAzul() {
-            fichaSeleccionada = document.getElementById("img4");
-            fichaSeleccionada.style.position = "absolute";
-            fichaSeleccionada.style.left = 0 + posX + "px";
-            fichaSeleccionada.style.bottom = 0 + posY + "px";
-        }
-        
 
         btnAzul = document.getElementById("btn-Azul");
         btnRoja = document.getElementById("btn-Roja");
@@ -148,7 +143,6 @@
         btnAzul.addEventListener("click", function () {
             fichaSeleccionada = "Azul";
             seleccionarFicha();
-
         });
 
         btnRoja.addEventListener("click", function () {
@@ -177,6 +171,51 @@
             }
         }
 
+        //mover sobre el tablero al ganzo
+        function moverFichaAzul() {
+            fichaSeleccionada = document.getElementById("img4");
+            fichaSeleccionada.style.position = "absolute";
+            fichaSeleccionada.style.left = 0 + posX + "px";
+            fichaSeleccionada.style.bottom = 0 + posY + "px";
+        }
+        
+        function moverFichaRoja() {
+            fichaSeleccionada = document.getElementById("img5");
+            fichaSeleccionada.style.position = "absolute";
+            fichaSeleccionada.style.left = 0 + posX + "px";
+            fichaSeleccionada.style.bottom = 0 + posY + "px";
+        }
+
+        function sacarPocicionAzul() {
+            resultado = 0;
+            resultado = posicionJugador1 + dado;
+            //console.log(prueba[resultado][0]);
+            //console.log(prueba[resultado][1]);
+            posX = fichaAzul[resultado][0];
+            posY = fichaAzul[resultado][1];
+            posicionJugador1 = resultado;
+            //console.log(posX);
+            //console.log(posY);
+        }
+
+        function sacarPocicionRoja() {
+            resultado = 0;
+            resultado = posicionJugador2 + dado;
+            //console.log(prueba[resultado][0]);
+            //console.log(prueba[resultado][1]);
+            posX = prueba2[resultado][0];
+            posY = prueba2[resultado][1];
+            posicionJugador2 = resultado;
+            //console.log(posX);
+            //console.log(posY);
+        }
+
+        //regresar atras si no quedas en el lugar 25 del arreglo
+        function regresarPocicionAzul() {
+            if (posicionJugador1 => 25) {
+                posicionJugador1 = posicionJugador1;
+            }
+        }
 
         //tirar dados
         function tirarDados() {
@@ -184,24 +223,10 @@
             console.log(dado);
             cambiarImagen();
             avanzar();
-            resultado = posicionJugador1 + dado;
-            console.log(prueba[resultado][0]);
-            console.log(prueba[resultado][1]);
-
-            posX = prueba[resultado][0];
-            posY = prueba[resultado][1];
-
-            posicionJugador1 = resultado;
-
-            console.log(posX);
-            console.log(posY);
+            sacarPocicionAzul();
             moverFichaAzul();
         }
-
-        function avanzar() {
-
-        }	
-
+        
         function cambiarImagen() {
             let contador = 0;
             var intervalo = setInterval(function () {
@@ -213,14 +238,6 @@
                 }
             }, 100);
         }
-
-
-
-      
-
-
-        //CASILLA 3 LUGARES HACIA ATRAS 
-
 
 
     </script>
