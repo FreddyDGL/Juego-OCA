@@ -1,5 +1,5 @@
 *{
-    /* Tablero */
+    /* TABLERO GENERAL */
     width: 500px;
     height: 500px;
     margin: 0 auto;
@@ -12,9 +12,8 @@ body{
 h1{
     text-align: center;
     font-size: 50px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
-    font-size: 40px;
 }
 
 .tablero{
@@ -24,21 +23,37 @@ h1{
     width: 970px;
     height: 600px;
     float: left;
+    position: relative;
     margin-left: -25%;
     margin-top: -85%;
-}
-.tablero:hover{
-    -webkit-transition: 2.00s;
-    transition: 2.00s;
+
 }
 
+
+    /* TEXTOS */
 #inicio{
-    font-size: 30px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin-left: 75px;
     font-size: 25px;
 }
 
+#textoOca{
+    font-size: 150px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    left: 130px;
+    top: 150px;
+}
+
+#final{
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 70px;
+    font-size: 25px;
+    margin-top: 160px;
+}
+
+    /* CASILLAS */
 #casilla1{
     background-color: #FBF9FA;
     border: 3px solid#000000;
@@ -50,7 +65,7 @@ h1{
     margin-top: 485px;
 }
 #casilla2{
-    background-color: #FAB4D9;
+    background-color: #ECC3F5 ;
     border: 3px solid#000000;
     border-radius: 5%;
     width: 100px;
@@ -80,14 +95,14 @@ h1{
     margin-top: 485px;
 }
 #casilla5{
-    background-color: #8FC2FF;
-    border: 3px solid#000000;
+    background-color: #2878BF;
+    border: 5px solid#000000;
     border-radius: 5%;
     width: 100px;
-    height: 100px;
+    height: 98px;
     float: left;
-    margin-left: 2px;
-    margin-top: 485px;
+    margin-left: 1px;
+    margin-top: 483px;
 }
 #casilla6{
     background-color: #E4FDEE;
@@ -113,10 +128,10 @@ h1{
     background-color: #FABBB4;
     border: 3px solid#000000;
     border-radius: 5%;
-    width: 100px;
+    width: 98px;
     height: 100px;
     float: left;
-    margin-left: 2px;
+    margin-left: 1.5px;
     margin-top: 485px;
 }
 #casilla9{
@@ -130,14 +145,14 @@ h1{
     margin-top: -214px;
 }
 #casilla10{
-    background-color: #FF8FC4;
-    border: 3px solid#000000;
+    background-color: #BF288A;
+    border: 5px solid#000000;
     border-radius: 5%;
     width: 100px;
-    height: 100px;
+    height: 98px;
     float: left;
-    margin-left: 861px;
-    margin-top: -322px;
+    margin-left: 858px;
+    margin-top: -323px;
 }
 #casilla11{
     background-color: #C4E4FC;
@@ -170,14 +185,14 @@ h1{
     margin-top: -565px;
 }
 #casilla14{
-    background-color: #CF8FFF;
-    border: 3px solid#000000;
+    background-color: #8F28BF;
+    border: 5px solid#000000;
     border-radius: 5%;
     width: 100px;
     height: 100px;
     float: left;
-    margin-left: 644px;
-    margin-top: -565px;
+    margin-left: 640px;
+    margin-top: -567px;
 }
 #casilla15{
     background-color: #F2DEFC;
@@ -186,7 +201,7 @@ h1{
     width: 100px;
     height: 100px;
     float: left;
-    margin-left: 535px;
+    margin-left: 532px;
     margin-top: -565px;
 }
 #casilla16{
@@ -196,7 +211,7 @@ h1{
     width: 100px;
     height: 100px;
     float: left;
-    margin-left: 426px;
+    margin-left: 423px;
     margin-top: -565px;
 }
 #casilla17{
@@ -206,18 +221,18 @@ h1{
     width: 100px;
     height: 100px;
     float: left;
-    margin-left: 318px;
+    margin-left: 313px;
     margin-top: -565px;
 }
 #casilla18{
-    background-color: #8FE7FF;
-    border: 3px solid#000000;
+    background-color: #A4F17D ;
+    border: 5px solid#000000;
     border-radius: 5%;
-    width: 100px;
+    width: 110px;
     height: 100px;
     float: left;
-    margin-left: 210px;
-    margin-top: -565px;
+    margin-left: 192px;
+    margin-top: -567px;
 }
 #casilla19{
     background-color: #FCE0DE;
@@ -226,7 +241,7 @@ h1{
     width: 180px;
     height: 100px;
     float: left;
-    margin-left: 20px;
+    margin-left: 5px;
     margin-top: -565px;
 }
 #casilla20{
@@ -236,7 +251,7 @@ h1{
     width: 100px;
     height: 125px;
     float: left;
-    margin-left: 20px;
+    margin-left: 5px;
     margin-top: -455px;
 }
 #casilla21{
@@ -246,18 +261,18 @@ h1{
     width: 100px;
     height: 150px;
     float: left;
-    margin-left: 20px;
+    margin-left: 5px;
     margin-top: -322px;
 }
 #casilla22{
-    background-color: #FFEB8F;
-    border: 3px solid#000000;
+    background-color: #FFC300;
+    border: 5px solid#000000;
     border-radius: 5%;
     width: 100px;
     height: 100px;
     float: left;
-    margin-left: 130px;
-    margin-top: -271px;
+    margin-left: 115px;
+    margin-top: -274px;
 }
 #casilla23{
     background-color: #DEFEF5;
@@ -266,7 +281,7 @@ h1{
     width: 100px;
     height: 100px;
     float: left;
-    margin-left: 240px;
+    margin-left: 230px;
     margin-top: -271px;
 }
 #casilla24{
@@ -276,7 +291,7 @@ h1{
     width: 100px;
     height: 100px;
     float: left;
-    margin-left: 350px;
+    margin-left: 340px;
     margin-top: -271px;
 }
 #casilla25{
@@ -290,18 +305,7 @@ h1{
     margin-top: -331px;
 }
 
-#final{
-    font-size: 30px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-left: 70px;
-    font-size: 25px;
-    margin-top: 160px;
-}
 
-#casilla1,#casilla2,#casilla3,#casilla4,#casilla5,#casilla6,#casilla7,#casilla8,#casilla9,#casilla10,#casilla11,#casilla12,#casilla13,#casilla14,#casilla16,#casilla17,#casilla18,#casilla19,#casilla20,#casilla21,#casilla22,#casilla23,#casilla24,#casilla25:hover{
-    -webkit-transition: 0.70s;
-    transition: 0.70s;
-}
 #btn-Azul{
     background-color: #5198FF !important;
     border: 3px solid#000000;
@@ -311,8 +315,10 @@ h1{
     float: left;
     margin-left: -375px;
     margin-top: -899px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+    /* BOTONES */
 #btn-Roja{
     background-color: #FF5151;
     border: 3px solid#000000;
@@ -322,6 +328,7 @@ h1{
     float: left;
     margin-left: -250px;
     margin-top: -1399px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #btn-Tirar{
@@ -333,59 +340,11 @@ h1{
     float: left;
     margin-left: -320px;
     margin-top: -1760px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-@-webkit-keyframes pulse {
-  0% {
-    box-shadow: 0 0 0 0 var(--hover);
-  }
-}
-
-@keyframes pulse {
-  0% {
-    box-shadow: 0 0 0 0 var(--hover);
-  }
-}
-
-
-#btn-Azul {
-  color: var(--color);
-  -webkit-transition: 2.00s;
-  transition: 2.00s;
-}
-#btn-Azul:hover, #btn-Azul:focus {
-  border-color: var(--hover);
-  color: #fff;
-}
-
-#btn-Azul:hover {
-    background: #318aac;
-    color: #fff !important;
-}
-
-#btn-Roja {
-    color: var(--color);
-    -webkit-transition: 2.00s;
-    transition: 2.00s;
-}
-
-#btn-Roja:hover, #btn-Roja:focus {
-    border-color: var(--hover);
-    color: #fff;
-}
-
-#btn-Tirar {
-    color: var(--color);
-    -webkit-transition: 2.00s;
-    transition: 2.00s;
-}
-
-#btn-Tirar:hover, #btn-Tirar:focus {
-    border-color: var(--hover);
-    color: #fff;
-}
-
-#img1{
+    /* IMAGENES */
+#img1{                  /*GANSO COMPLETO*/
     width: 200px;
     height: 200px;
     float: left;
@@ -393,7 +352,7 @@ h1{
     margin-top: -640px;
 }
 
-#img2{
+#img2{                  /*CABEZA GANSO*/
     width: 201px;
     height: 201px;
     float: left;
@@ -401,36 +360,95 @@ h1{
     margin-top: -660px;
 } 
 
-#img3{
+#img3{                   /*DADO*/
     width: 200px;
     height: 200px;
     float: left;
-    margin-left: -360px;
-    margin-top: -1650px;
+    margin-left: -380px;
+    margin-top: -1655px;
+    border: #7DDEF1 solid 5px;
+    border-radius: 20%;
 }
 
-#img4{
-    width: 60px;
-    height: 60px;
-    float: left;
-    margin-left: 20px;
-    margin-top: -460px;
+#img4{                   /*FICHA1*/
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 25px; /* +200 */  /* +110 */ 
+    bottom: 15px; /* +110 */ 
+    z-index: 10;
 }
 
-#img5{
-    width: 60px;
-    height: 60px;
-    float: left;
-    margin-left: 100px;
-    margin-top: -460px;
+#img5{                  /*FICHA2*/
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 125px;  /* +140 */
+    bottom: 15px;
+    z-index: 10;
 }
-#img3{
+
+    /* ANIMACIONES */
+@-webkit-keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 var(--hover);
+    }
+  }
+  
+@keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 var(--hover);
+    }
+  }
+ 
+.tablero:hover{
+    -webkit-transition: 2.00s;
+    transition: 2.00s;
+}  
+
+#casilla1,#casilla2,#casilla3,#casilla4,#casilla5,#casilla6,#casilla7,#casilla8,#casilla9,#casilla10,#casilla11,#casilla12,#casilla13,#casilla14,#casilla16,#casilla17,#casilla18,#casilla19,#casilla20,#casilla21,#casilla22,#casilla23,#casilla24,#casilla25:hover{
+    -webkit-transition: 0.70s;
+    transition: 0.70s;
+}
+
+  #btn-Azul {
     color: var(--color);
     -webkit-transition: 2.00s;
     transition: 2.00s;
-}
-
-#img3:hover, #img3:focus {
+  }
+  #btn-Azul:hover, #btn-Azul:focus {
     border-color: var(--hover);
     color: #fff;
+  }
+  
+  #btn-Azul:hover {
+      background: #318aac;
+      color: #fff !important;
+  }
+  
+  #btn-Roja {
+      color: var(--color);
+      -webkit-transition: 2.00s;
+      transition: 2.00s;
+  }
+  
+  #btn-Roja:hover, #btn-Roja:focus {
+      border-color: var(--hover);
+      color: #fff;
+  }
+  
+  #btn-Tirar {
+      color: var(--color);
+      -webkit-transition: 2.00s;
+      transition: 2.00s;
+  }
+  
+  #btn-Tirar:hover, #btn-Tirar:focus {
+      border-color: var(--hover);
+      color: #fff;
+  }
+
+#img3{
+    -webkit-transition: 2.00s;
+    transition: 2.00s;
 }

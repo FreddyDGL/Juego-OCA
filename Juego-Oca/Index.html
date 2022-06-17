@@ -14,11 +14,11 @@
 
     <section>
         <div class="tablero">
+                <img src="Imagenes/gansoAzul.png" alt="Ficha" id="img4">
+                <img src="Imagenes/gansoRojo.png" alt="Ficha2" id="img5">
             <div id="casilla1">
                 <article id="texto1">
                     <p id="inicio">Start</p>
-                    <img src="Imagenes/gansoAzul.png" alt="Ficha" id="img4">
-                    <img src="Imagenes/gansoRojo.png" alt="Ficha2" id="img5">
                 </article>
             </div>
             <div id="casilla2">
@@ -95,10 +95,10 @@
                     <p id="final">Finish</p>
                     <img src="Imagenes/gansoFinal.png" alt="gansoFinal" id="img2">
                     <img src="Imagenes/ganso.png" alt="ganso" id="img1">
-                </article>
+            </article>
             </div>
+            <p id="textoOca">Oca</p>
         </div>
-
     </section>
     <section>
         <div class="boton">
@@ -116,15 +116,30 @@
     <script>
 
         //arreglo de 26 elementos que representa el tablero a partir del primer elemento
-        var tableroPocision = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-        var tableroLugares = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25];
-        var prueba = [0,];
+        var prueba = [[25,15],[225,15],[325,15],[435,15],[545,15],[655,15],[765,15],[870,15],[870,125],[870,235],[870,345],[870,475],[760,475],[650,475]
+        ,[533,475],[430,475],[320,475],[210,475],[25,474],[25,345],[25,190],[125,190],[235,190],[345,190],[500,190]];
+        var prueba2 = [[125,15],[270,15],[379,15],[485,15],[595,15],[705,15],[815,15],[917,15],[917,125],[917,235],
+        [917,345],[870,475],[805,475],[695,475],[588,475],[478,475],[368,475],[258,475],[73,475],[60,399],[60,280],[175,190],[289,190],[395,190],[545,190]];
+        var posicionJugador1 = 0;
+        var posicionJugador2 = 0;
         var fichaSeleccionada;
         var fichaJugador1;
         var fichaJugador2;
-        var dado;
+        var dado = 0;
         var turno;
+        var resultado;
+        var posX = 0;
+        var posY = 0;
+        
 
+        //mover sobre el tablero al ganzo
+        function moverFichaAzul() {
+            fichaSeleccionada = document.getElementById("img4");
+            fichaSeleccionada.style.position = "absolute";
+            fichaSeleccionada.style.left = 0 + posX + "px";
+            fichaSeleccionada.style.bottom = 0 + posY + "px";
+        }
+        
 
         btnAzul = document.getElementById("btn-Azul");
         btnRoja = document.getElementById("btn-Roja");
@@ -168,11 +183,24 @@
             dado = Math.floor(Math.random() * 6) + 1;
             console.log(dado);
             cambiarImagen();
-            return dado;
+            avanzar();
+            resultado = posicionJugador1 + dado;
+            console.log(prueba[resultado][0]);
+            console.log(prueba[resultado][1]);
 
+            posX = prueba[resultado][0];
+            posY = prueba[resultado][1];
 
+            posicionJugador1 = resultado;
 
+            console.log(posX);
+            console.log(posY);
+            moverFichaAzul();
         }
+
+        function avanzar() {
+
+        }	
 
         function cambiarImagen() {
             let contador = 0;
@@ -186,38 +214,9 @@
             }, 100);
         }
 
-        //mover ficha
-        function moverFicha(ficha, dado) {
-            let posicion = tableroPocision[ficha];
-            let nuevaPosicion = posicion + dado;
-            tableroPocision[ficha] = nuevaPosicion;
-            /*         document.getElementById("texto"+ficha).innerHTML = "";
-                    document.getElementById("texto"+nuevaPosicion).innerHTML = ficha; */
-        }
 
 
-        //asignar turno 
-        function asignarTurno() {
-            let turno = document.getElementById("turno").value;
-            let fichaJugador1 = document.getElementById("jugador").value;
-            let fichaJugador2 = document.getElementById("jugador2").value;
-
-            if (turno === 0) {
-                turnoRoja = true;
-                turnoAzul = false;
-                alerta("la ficha roja");
-                cambiarCubilete();
-            }
-            if (turno == 1) {
-                turnoAzul = true;
-                turnoRoja = false;
-                alerta("la ficha Azul");
-                cambiarCubilete();
-            }
-
-        }
-
-        // CASILLAS ESPECIALES , (AVANZAR 3 CASILLAS MAS )
+      
 
 
         //CASILLA 3 LUGARES HACIA ATRAS 
