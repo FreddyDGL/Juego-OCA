@@ -1,5 +1,4 @@
 *{
-    /* TABLERO GENERAL */
     width: 500px;
     height: 500px;
     margin: 0 auto;
@@ -55,7 +54,7 @@ h1{
 
     /* CASILLAS */
 #casilla1{
-    background-color: #FBF9FA;
+    background-color: #CACFD2;
     border: 3px solid#000000;
     border-radius: 5%;
     width: 200px;
@@ -65,7 +64,7 @@ h1{
     margin-top: 485px;
 }
 #casilla2{
-    background-color: #8FFFBB;
+    background-color: #d1fde2;
     border: 3px solid#000000;
     border-radius: 5%;
     width: 100px;
@@ -75,7 +74,7 @@ h1{
     margin-top: 485px;
 }
 #casilla3{
-    background-color: #F18FFF;
+    background-color: #ff8fc7;
     border: 3px solid#000000;
     border-radius: 5%;
     width: 100px;
@@ -85,7 +84,7 @@ h1{
     margin-top: 485px;
 }
 #casilla4{
-    background-color: #EDFDE4;
+    background-color: rgb(170, 191, 247);
     border: 3px solid#000000;
     border-radius: 5%;
     width: 100px;
@@ -95,7 +94,7 @@ h1{
     margin-top: 485px;
 }
 #casilla5{
-    background-color: #2878BF;
+    background-color: #ffae00;
     border: 5px solid#000000;
     border-radius: 5%;
     width: 100px;
@@ -105,7 +104,7 @@ h1{
     margin-top: 483px;
 }
 #casilla6{
-    background-color: #E4FDEE;
+    background-color: #B9FF8F;
     border: 3px solid#000000;
     border-radius: 5%;
     width: 100px;
@@ -115,7 +114,7 @@ h1{
     margin-top: 485px;
 }
 #casilla7{
-    background-color: #FAF9B4;
+    background-color: #FFCA8F;
     border: 3px solid#000000;
     border-radius: 5%;
     width: 100px;
@@ -125,7 +124,7 @@ h1{
     margin-top: 485px;
 }
 #casilla8{
-    background-color: #FABBB4;
+    background-color: rgb(233, 201, 236);
     border: 3px solid#000000;
     border-radius: 5%;
     width: 98px;
@@ -135,7 +134,7 @@ h1{
     margin-top: 485px;
 }
 #casilla9{
-    background-color: #DEFEEC;
+    background-color: #CC8FFF;
     border: 3px solid#000000;
     border-radius: 5%;
     width: 100px;
@@ -145,7 +144,7 @@ h1{
     margin-top: -214px;
 }
 #casilla10{
-    background-color: #BF288A;
+    background-color: #ff99db;
     border: 5px solid#000000;
     border-radius: 5%;
     width: 100px;
@@ -165,7 +164,7 @@ h1{
     margin-top: -455px;
 }
 #casilla12{
-    background-color: #E0FCDE;
+    background-color: #D1FF8F;
     border: 3px solid#000000;
     border-radius: 5%;
     width: 100px;
@@ -175,7 +174,7 @@ h1{
     margin-top: -565px;
 }
 #casilla13{
-    background-color: #FECFCD;
+    background-color: #FFCEDB;
     border: 3px solid#000000;
     border-radius: 5%;
     width: 100px;
@@ -185,7 +184,7 @@ h1{
     margin-top: -565px;
 }
 #casilla14{
-    background-color: #8F28BF;
+    background-color: #6952a8;
     border: 5px solid#000000;
     border-radius: 5%;
     width: 100px;
@@ -195,7 +194,7 @@ h1{
     margin-top: -567px;
 }
 #casilla15{
-    background-color: #F2DEFC;
+    background-color: #FFFD8F;
     border: 3px solid#000000;
     border-radius: 5%;
     width: 100px;
@@ -205,7 +204,7 @@ h1{
     margin-top: -565px;
 }
 #casilla16{
-    background-color: #CDFED0;
+    background-color: #fecdcd;
     border: 3px solid#000000;
     border-radius: 5%;
     width: 100px;
@@ -215,7 +214,7 @@ h1{
     margin-top: -565px;
 }
 #casilla17{
-    background-color: #D1F9FF;
+    background-color: rgb(154, 143, 255);
     border: 3px solid#000000;
     border-radius: 5%;
     width: 100px;
@@ -225,7 +224,7 @@ h1{
     margin-top: -565px;
 }
 #casilla18{
-    background-color: #A4F17D ;
+    background-color: rgb(135, 211, 201);
     border: 5px solid#000000;
     border-radius: 5%;
     width: 110px;
@@ -235,7 +234,7 @@ h1{
     margin-top: -567px;
 }
 #casilla19{
-    background-color: #FCE0DE;
+    background-color: rgb(251, 255, 198);
     border: 3px solid#000000;
     border-radius: 5%;
     width: 180px;
@@ -245,7 +244,7 @@ h1{
     margin-top: -565px;
 }
 #casilla20{
-    background-color: #FECDEA;
+    background-color: #b0c8ec;
     border: 3px solid#000000;
     border-radius: 5%;
     width: 100px;
@@ -255,7 +254,7 @@ h1{
     margin-top: -455px;
 }
 #casilla21{
-    background-color: #EBFCC1;
+    background-color: #F7B4DD;
     border: 3px solid#000000;
     border-radius: 5%;
     width: 100px;
@@ -265,7 +264,7 @@ h1{
     margin-top: -322px;
 }
 #casilla22{
-    background-color: #FFC300;
+    background-color: #da84da;
     border: 5px solid#000000;
     border-radius: 5%;
     width: 100px;
@@ -275,7 +274,7 @@ h1{
     margin-top: -274px;
 }
 #casilla23{
-    background-color: #DEFEF5;
+    background-color: #ffe18f;
     border: 3px solid#000000;
     border-radius: 5%;
     width: 100px;
@@ -285,7 +284,7 @@ h1{
     margin-top: -271px;
 }
 #casilla24{
-    background-color: #FFC9C9;
+    background-color: rgb(200, 250, 202);
     border: 3px solid#000000;
     border-radius: 5%;
     width: 100px;
@@ -336,9 +335,9 @@ h1{
     border: 3px solid#000000;
     border-radius: 5%;
     width: 120px;
-    height: 30px;
+    height: 40px;
     float: left;
-    margin-left: -320px;
+    margin-left: -330px;
     margin-top: -1760px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -364,7 +363,7 @@ h1{
     width: 200px;
     height: 200px;
     float: left;
-    margin-left: -380px;
+    margin-left: -370px;
     margin-top: -1655px;
     border: #7DDEF1 solid 5px;
     border-radius: 20%;
@@ -389,6 +388,7 @@ h1{
 }
 
     /* ANIMACIONES */
+
 @-webkit-keyframes pulse {
     0% {
       box-shadow: 0 0 0 0 var(--hover);
@@ -403,52 +403,95 @@ h1{
  
 .tablero:hover{
     -webkit-transition: 2.00s;
+    -o-transition: 2.00s;
+    -moz-transition: 2.00s;
     transition: 2.00s;
 }  
 
 #casilla1,#casilla2,#casilla3,#casilla4,#casilla5,#casilla6,#casilla7,#casilla8,#casilla9,#casilla10,#casilla11,#casilla12,#casilla13,#casilla14,#casilla16,#casilla17,#casilla18,#casilla19,#casilla20,#casilla21,#casilla22,#casilla23,#casilla24,#casilla25:hover{
     -webkit-transition: 0.70s;
+    -o-transition: 0.70s;
+    -moz-transition: 0.70s;
     transition: 0.70s;
 }
 
-  #btn-Azul {
+#btn-Azul {
     color: var(--color);
     -webkit-transition: 2.00s;
+    -o-transition: 2.00s;
+    -moz-transition: 2.00s;
     transition: 2.00s;
   }
-  #btn-Azul:hover, #btn-Azul:focus {
+#btn-Azul:hover, #btn-Azul:focus {
     border-color: var(--hover);
     color: #fff;
   }
   
-  #btn-Azul:hover {
+#btn-Azul:hover {
       background: #318aac;
       color: #fff !important;
   }
   
-  #btn-Roja {
+#btn-Roja {
       color: var(--color);
       -webkit-transition: 2.00s;
+      -o-transition: 2.00s;
+      -moz-transition: 2.00s;
       transition: 2.00s;
   }
   
-  #btn-Roja:hover, #btn-Roja:focus {
+#btn-Roja:hover, #btn-Roja:focus {
       border-color: var(--hover);
       color: #fff;
   }
   
-  #btn-Tirar {
+#btn-Tirar {
       color: var(--color);
       -webkit-transition: 2.00s;
+      -o-transition: 2.00s;
+      -moz-transition: 2.00s;
       transition: 2.00s;
-  }
+}
   
-  #btn-Tirar:hover, #btn-Tirar:focus {
+#btn-Tirar:hover, #btn-Tirar:focus {
       border-color: var(--hover);
       color: #fff;
-  }
+}
 
 #img3{
     -webkit-transition: 2.00s;
     transition: 2.00s;
+}
+
+/* Animacion para el movimiento de la imagen4 y la imagen5*/
+#img4:after{
+    transform: translate(350px,-350px);
+    -webkit-transform: translate(350px,-350px); /** Chrome & Safari **/
+    -o-transform: translate(350px,-350px); /** Opera **/
+    -moz-transform: translate(350px,-350px); /** Firefox **/
+}
+
+
+#img4{       
+position: absolute;
+transition: all 2s ease-in-out;
+-webkit-transition: all 2s ease-in-out; /** Chrome & Safari **/
+-moz-transition: all 2s ease-in-out; /** Firefox **/
+-o-transition: all 2s ease-in-out; /** Opera **/
+}
+
+#img5:after{
+    transform: translate(350px,-350px);
+    -webkit-transform: translate(350px,-350px); /** Chrome & Safari **/
+    -o-transform: translate(350px,-350px); /** Opera **/
+    -moz-transform: translate(350px,-350px); /** Firefox **/
+}
+
+
+#img5{       
+position: absolute;
+transition: all 2s ease-in-out;
+-webkit-transition: all 2s ease-in-out; /** Chrome & Safari **/
+-moz-transition: all 2s ease-in-out; /** Firefox **/
+-o-transition: all 2s ease-in-out; /** Opera **/
 }
